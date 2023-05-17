@@ -8,4 +8,5 @@ class Test{
         System.out.println("My name is :" + test.name);
         System.out.println("My number is :" + test.number);
     }
+    
 }
