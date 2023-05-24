@@ -17,3 +17,21 @@ public class Test{
         System.out.println("When the class is public, the name of the file has to be the class name.");
     }
 }
+
+//functions (methods) in java.
+class Box{
+    int width=10;
+    int height=20;
+    int depth=34;
+
+    void calculateVolume(){
+        System.out.println("The volume is :");
+        System.out.println(width*height*depth);
+    }
+    public static void main(String[] args){
+
+        Box box ;//reference your object
+        box= new Box();//allocate the class Box an object.
+        box.calculateVolume();
+    }
+}
