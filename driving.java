@@ -1,29 +1,27 @@
-import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 class DrivingCost {
-   public static void main(String[] args) {
-       Scanner scan = new Scanner(System.in);
-       System.out.println("Enter total miles driven per day: ");
-       double totalMiles = scan.nextDouble();
+    public static void main(String[] args) {
+        String totalMilesInput = JOptionPane.showInputDialog("Enter total miles driven per day: ");
+        double totalMiles = Double.parseDouble(totalMilesInput);
 
-       System.out.println("Enter cost per gallon of gasoline: ");
-       double costPerGallon = scan.nextDouble();
+        String costPerGallonInput = JOptionPane.showInputDialog("Enter cost per gallon of gasoline: ");
+        double costPerGallon = Double.parseDouble(costPerGallonInput);
 
-       System.out.println("Enter average miles per gallon: ");
-       double milesPerGallon = scan.nextDouble();
+        String milesPerGallonInput = JOptionPane.showInputDialog("Enter average miles per gallon: ");
+        double milesPerGallon = Double.parseDouble(milesPerGallonInput);
 
-       System.out.println("Enter parking fees per day: ");
-       double parkingFees = scan.nextDouble();
+        String parkingFeesInput = JOptionPane.showInputDialog("Enter parking fees per day: ");
+        double parkingFees = Double.parseDouble(parkingFeesInput);
 
-       System.out.println("Enter tolls per day: ");
-       double tolls = scan.nextDouble();
+        String tollsInput = JOptionPane.showInputDialog("Enter tolls per day: ");
+        double tolls = Double.parseDouble(tollsInput);
 
-       // Calculate the total cost.
-       double gasUsedPerDay = totalMiles / milesPerGallon;
-       double drivingCost = gasUsedPerDay * costPerGallon + parkingFees + tolls;
+        // Calculate the total cost.
+        double gasUsedPerDay = totalMiles / milesPerGallon;
+        double drivingCost = gasUsedPerDay * costPerGallon + parkingFees + tolls;
 
-       // Display the total calculated cost.
-       System.out.println("Your daily driving cost is: Ksh" + drivingCost+"/=");
-       scan.close();
-   }
-} 
+        // Display the total calculated cost.
+        JOptionPane.showMessageDialog(null, "Your daily driving cost is: Ksh" + drivingCost + "/=");
+    }
+}
