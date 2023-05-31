@@ -12,5 +12,17 @@ public class bool {
 
         int range1=-2345;// default value for this primitive data type is 0.
         System.out.println(range1);
+
+        long range2=-1234567L; //the 'L' is used to represent an integer of 'long' type.
+        System.out.println(range2);
+
+        double number=-42.8;
+        System.out.println(number);
+
+        float number1=12.3f;//should never be used for precise values.
+        System.out.println(number1);
+
+        char letter='\u0052';
+        System.out.println(letter);
     }
 }
