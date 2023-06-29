@@ -29,6 +29,7 @@ public class graphical{
          textField1.setBounds(50, 50, 100, 25);
          frame.add(textField1);
 
+
          textField2 = new JTextField();
          textField2.setBounds(200, 50, 100, 25);
          frame.add(textField2);
