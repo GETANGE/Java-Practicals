@@ -51,6 +51,7 @@ public class graphical{
      }
 
     public static void main(String[] args) {
-        new graphical();
+
+         new graphical();
     }
 }
