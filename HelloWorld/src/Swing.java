@@ -1,14 +1,30 @@
 import javax.swing.*;
+import java.awt.*;
 
 public class Swing {
     public static void main(String[] args){
 
-        //create the top-level window.
-        JFrame myJFrame = new JFrame("My swing application");
-        JLabel myLabel = new JLabel("HelloWorld!");
-        myJFrame.getContentPane().add(myLabel);
+        JFrame frame = new JFrame("My swing App");
+        JPanel myPanel = new JPanel();
 
-        myJFrame.pack();
-        myJFrame.setVisible(true);
+        //creating the main frame.
+        frame.getContentPane().add(myPanel);
+        myPanel.setBounds(40,80,200,200);
+        myPanel.setBackground(Color.gray);
+
+        //creating the buttons.
+        JButton button = new JButton("Button 1");
+        JButton button2 = new JButton("Button 2");
+
+        button.setBounds(50,100,80,30);
+        button2.setBounds(100,100,80,30);
+
+        button.setBackground(Color.green);
+        button2.setBackground(Color.yellow);
+        myPanel.add(button);
+        myPanel.add(button2);
+
+        frame.setSize(400, 400);
+        frame.setVisible(true);
     }
 }
