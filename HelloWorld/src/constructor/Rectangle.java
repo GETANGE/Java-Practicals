@@ -35,13 +35,13 @@ class Person1{
 
 class Teacher extends Person1 {
     public Teacher(String name, String gender, int age) {
-        super(name, gender, age);
+        super();
     }
 }
 
 class Student extends Person1 {
     public Student(String name, String gender, int age) {
-        super(name, gender, age);
+        super();
     }
 }
 
